@@ -1,0 +1,87 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* App Container */
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #f8f9fa;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 15px;
+    font-size: 1.4em;
+    font-weight: bold;
+    background: #007BFF;
+    color: white;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Sensor Data Card */
+.sensor-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 400px;
+    margin: auto;
+}
+
+.sensor-card p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 10px 0;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-btn {
+    border: none;
+    background: none;
+    font-size: 16px;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    color: #555;
+}
+
+.nav-btn i {
+    font-size: 20px;
+    display: block;
+}
+
+.nav-btn.active {
+    color: #007BFF;
+    font-weight: bold;
+}
