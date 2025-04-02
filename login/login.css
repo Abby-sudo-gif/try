@@ -1,0 +1,79 @@
+/* Body */
+body{
+    background: url('');
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Log in */
+.log-in{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 900px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+h3{
+    font-weight: lighter;
+    position: absolute;
+    top: 20%;
+    bottom: 10%;
+    left: 45%;
+
+
+}
+
+/* Log in container */
+.log-in-container{
+    background: rgba(0, 0, 0,.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(112, 188, 247, 0.2);
+}
+
+button{
+    background-color: #04aa6d;
+    color: #fff;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover{
+    opacity: .8;
+}
+
+/* forgot password text*/
+span.psw{
+    float: center;
+}
+
+.cancelbtn{
+    width: auto;
+    float: center;
+    padding: 1px 6px;
+    background-color: #f44336;
+}
+
+
+@media screen and (max-width:300px) {
+    span.psw{
+        display: block;
+        float: none;
+    }
+    .cancelbtn{
+        width: 100%;
+    }
+    
+}

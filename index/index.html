@@ -1,7 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="index.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <body>
+    <div class="app">
+        <!-- Header -->
+        <header>
+            <h1>Water Monitoring</h1>
+        </header>
+
+        <!-- Main Content -->
+        <main id="home">
+            <div class="sensor-card">
+                <p>🌡 Temperature: <span id="temperature">--</span> °C</p>
+                <p>⚡ pH Level: <span id="ph-level">--</span></p>
+                <p>🌫 Turbidity: <span id="turbidity">--</span> NTU</p>
+                <p>💧 Conductivity: <span id="conductivity">--</span> μS/cm</p>
+                <p>🧪 Dissolved Oxygen: <span id="oxygen">--</span> mg/L</p>
+            </div>
+        </main>
+
+        <main id="history" class="hidden">
+            <h2>History</h2>
+            <p>Past water condition logs will appear here.</p>
+        </main>
+
+        <main id="settings" class="hidden">
+            <h2>Settings</h2>
+            <p>Adjust your preferences here.</p>
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <button class="nav-btn active" onclick="showPage('home')">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </button>
+            <button class="nav-btn" onclick="showPage('history')">
+                <i class="fas fa-history"></i>
+                <span>History</span>
+            </button>
+            <button class="nav-btn" onclick="showPage('settings')">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </button>
+        </nav>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll("main").forEach(page => page.classList.add("hidden"));
+            document.getElementById(pageId).classList.remove("hidden");
+
+            document.querySelectorAll(".nav-btn").forEach(btn => btn.classList.remove("active"));
+            event.currentTarget.classList.add("active");
+        }
+    </script>
+
+
+
+  
 <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
 <div>Hello world</div>
