@@ -1,4 +1,19 @@
 form{
-
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
 }
 
+button{
+    background-color: #04aa6d;
+    color: #fff;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover{
+    opacity: .8;
+}
