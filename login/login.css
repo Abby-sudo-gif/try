@@ -11,9 +11,9 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    width: 900px;
-    height: 800px;
+    transform: translate(-30%,-90%);
+    width: 750px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;   
@@ -29,6 +29,7 @@ form{
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    gap: 6px;
 }
 
 select{
@@ -38,9 +39,9 @@ select{
     margin: 10px 0;
 }
 
-/*select.role{
-    align-items: center;
-    font-weight: lighter;
+.role{
+    justify-tracks: center;
+    align-tracks: center;
 }
 /* Log in container */
 .log-in-container{
@@ -48,9 +49,13 @@ select{
     border-radius: 8px;
     display: flex;
     flex-direction: column;
+    width: 50%;
+    height: 35%;
     margin: 10px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(112, 188, 247, 0.2);
+    padding-left: 13px;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 5px 0 10px rgba(112, 188, 247, 0.2);
     cursor: pointer;
 }
 
@@ -59,9 +64,9 @@ button{
     color: #fff;
     border-radius: 4px;
     margin: 8px 0;
-    display: flex;
+    align-self: center;
     cursor: pointer;
-    width: 10%;
+    width: 11%;
     font-weight: normal;
 }
 

@@ -1,19 +1,43 @@
-form{
+body{
+    background-color: rgb(250, 235, 215);
     justify-content: center;
+    align-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    gap: 5px;
+}
+
+h3{
+    font-weight: bold;
+    align-self: center;
+    justify-self: center;
+}
+
+form{
+    justify-items: center;
     align-items: center;
-    box-sizing: content-box;
+    box-sizing:border-box solid 20px;
     display: flex;
     flex-direction: column;
 }
 
 button{
-    background-color: #04aa6d;
-    color: #fff;
+    background-color: #c3dcd3;
+    color:rgba(22, 27, 28, 0.4);
     margin: 8px 0;
+    gap: 5px;
+    display: flex;
     cursor: pointer;
-    width: 100%;
+    border-radius: 4px;
 }
 
 button:hover{
     opacity: .8;
+}
+
+.cancelbtn{
+    width: auto;
+    float: center;
+    padding: 1px 6px;
+    background-color: #d86e67;
 }

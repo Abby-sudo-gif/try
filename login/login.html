@@ -9,16 +9,21 @@
 <body>
     <div class="log-in-container">
         <label for="role">
-          <h3>Log In:</h3>
+          <h3>Log In</h3>
         </label>
-        <select id="role">
-            <option value="0">Adminisitrator</option>
-            <option value="1">New User</option>
-        </select>
-        <form action="" method="post">
-                    <label for="name"><b>Username :</b></label>
+    <!--
+        <div id="role">
+            <select>
+                <option value="0">Adminisitrator</option>
+                <option value="1">New User</option>
+            </select>
+    
+        </div>
+        -->
+                <form action="" method="post">
+                    <label for="name"><b>Username</b></label>
                     <input type="text" placeholder= "Enter username please" name="Eddyson" required>
-                    <label for="psw"><b>Password :</b></label>
+                    <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder= "Enter password please" name="psw" required>
                 
                     <button type="submit">Log In</button>
@@ -26,7 +31,7 @@
                         <input type="checkbox" checked="checked" name="remember">Remember me
                     </label>  
                     <button type="button" class="cancelbtn">Cancel</button>
-                    <span class="psw">Forgot <a href="reset.html">password?</a></span>
+                    <span class="psw">Forgot <a href="/waterboat/login/password reset/reset.html">password?</a></span>
         </form>      
     </div>        
 </body>
