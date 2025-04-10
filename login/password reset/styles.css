@@ -1,0 +1,58 @@
+/*# CSS (in styles.css file)*/
+
+.neuromorphic-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.neuromorphic-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.neuromorphic-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.neuromorphic-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.neuromorphic-card h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.neuromorphic-progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.progress-bar-fill {
+    width: 50%;
+    height: 10px;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.progress-bar-fill:hover {
+    width: 75%;
+}

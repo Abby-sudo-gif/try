@@ -1,10 +1,9 @@
 body{
-    background-color: rgb(250, 235, 215);
+    background-color: rgba(143, 248, 142, 0.2);
     justify-content: center;
     align-content: center;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
-    gap: 5px;
 }
 
 h3{
@@ -16,28 +15,74 @@ h3{
 form{
     justify-items: center;
     align-items: center;
-    box-sizing:border-box solid 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    height: 350px;
     display: flex;
     flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 2px;
+    box-sizing: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 button{
-    background-color: #c3dcd3;
-    color:rgba(22, 27, 28, 0.4);
-    margin: 8px 0;
-    gap: 5px;
-    display: flex;
+    background-color: #2f3835;
+    color:rgba(2, 172, 178, 0.4);
+    margin: 18px 1px;
+    display: center;
+    padding: 1px 20px;
+    border: dashed 2px;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 4px;
+    box-shadow: 0 02px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
 }
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 85%;
+    box-sizing: 2px 3px;
+    font-size: 10px;
+}
+
 
 button:hover{
     opacity: .8;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"] {
+    background-color: #47aad5;
+    color: white;
+    flex: -1;
+    margin-right: 1px;
 }
 
 .cancelbtn{
     width: auto;
     float: center;
-    padding: 1px 6px;
+    padding: 1px 5px 3px 4px;
     background-color: #d86e67;
+    color: white;
+    flex: -1;
 }

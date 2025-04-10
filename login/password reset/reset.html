@@ -8,12 +8,12 @@
 </head>
 <body>
     <div>
-        <h3>Reset</h3>
-        <form action="" method="post">
+        <form action="/path/to/submit" method="post">
+            <h3>Reset</h3>
             <label for="Username">Username:</label>
-            <input type="text/email" placeholder="Name or Email">
+            <input type="text" id="username" name="username" placeholder="Name or Email" required>
             <label for="psw">Password:</label>
-            <input type="password">
+            <input type="password" id="psw" name="password" required>
             <button type="submit">Change Password</button>
             <button type="button" class="cancelbtn">Cancel</button>
         </form>
